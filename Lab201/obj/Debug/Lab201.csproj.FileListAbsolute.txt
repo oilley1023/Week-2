@@ -1,0 +1,4 @@
+C:\Users\patsamon_b\Desktop\test\week-2\Lab201\bin\Debug\Lab201.exe
+C:\Users\patsamon_b\Desktop\test\week-2\Lab201\bin\Debug\Lab201.pdb
+C:\Users\patsamon_b\Desktop\test\week-2\Lab201\obj\Debug\Lab201.exe
+C:\Users\patsamon_b\Desktop\test\week-2\Lab201\obj\Debug\Lab201.pdb
