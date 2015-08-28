@@ -1,4 +1,6 @@
-# Lab2-1 , design and implement the Student class
+# Lab2-1 , design and implement the Student class\
+Name :: Patsamon Boonchai 570611023 SEC 003
+
 
 Creates Student class in a separate file, e.g. "Student.cs", and implements it to satisfy the following requirements:
 - Properties: Name, StudentID, YearOfBirth, isActive
