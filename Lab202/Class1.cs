@@ -117,17 +117,19 @@ namespace Lab202
             }
 
             set
-            { if (value <=80 && value >=0 && value >=maxStudents)
-                {
-                    maxStudents = value;
-                }
-                else
-                {
+             { if (value < numStudents || value > 80 || value < 0)
+                 {
                     Console.WriteLine(courseID + " error try setting invalid Max No. Students!");
-                }
-            }
-        }
+                 }
+                 else
+                 {
+                      maxStudents = value;
+                 }
+             }
+         }
+         
 
+          
 
         public int NumStudents
         {
@@ -137,25 +139,28 @@ namespace Lab202
             }
 
             set
-            { if (value <=maxStudents && value>=0)
-                {
-                    numStudents = value;
 
-                }
-            else
-                {
-                    Console.WriteLine(courseID + ": error try setting invalid No. Students!");
-                }
-              
-            }
+           
+            { if (value > maxStudents || value < 0)
+                 {
+                     Console.WriteLine(courseID + ": error try setting invalid No. Students!");
+
+                 }
+             else
+                 {
+                   numStudents = value;  
+                 }
+
+             }
         }
-        public override string ToString() // [Course: Object-Oriented Programming (261200), Lecturer=staff, has 0 students, max=30]
+        public override string ToString() 
+            // [Course: Object-Oriented Programming (261200), Lecturer=staff, has 0 students, max=30]
         {
             
             
-                return "[Course :"+name+"("+ courseID +"),Lecturer ="+ lecturer +",has"+ numStudents+"students,max ="+ maxStudents ;
-            
-           
+                return "[Course :"+name+"("+ courseID +"),Lecturer ="+ lecturer +",has"+ numStudents+"students,max ="+ maxStudents + "]";
+
+
         }
     }
 
